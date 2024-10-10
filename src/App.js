@@ -6,10 +6,10 @@ function App() {
   const [result, setResult] = useState("");
 
   const handleResult = () => {
-    if(!input){
+    if(input===""){
       setResult("Error")
     }
-    if (input == "0/0") {
+    else if (input == "0/0") {
       setResult("NaN");
     } else {
       try {
